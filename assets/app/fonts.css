@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Wisdom Script";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Wisdom Script Regular"),
+    url("Wisdom Script AJ.woff") format("woff");
+}

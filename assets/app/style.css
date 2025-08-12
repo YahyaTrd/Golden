@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --text-color: #feb836;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+#home {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/banner1.jpg);
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+#home header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+}
+
+#home header.onscroll {
+  box-shadow: 0 6px 16px 1px rgba(34, 34, 34, 0.336);
+  background-color: white;
+}
+#home header.onscroll a {
+  color: #222;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 81px;
+}
+#home h1 {
+  color: var(--text-color);
+  font-family: "Wisdom Script", Script;
+  transform: translateY(-25%);
+}
+nav {
+  display: flex;
+  min-width: 400px;
+  justify-content: space-between;
+  width: 45%;
+}
+nav a,
+nav i {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+#home nav a:hover,
+#home nav a:active {
+  color: var(--text-color);
+}
+#home .hero {
+  text-align: center;
+  color: #fff;
+  padding: 0 15px;
+}
+#home h5 {
+  text-transform: capitalize;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 30;
+  font-size: 39px;
+  font-style: italic;
+}
+#home h4 {
+  font-weight: 700;
+  font-size: 76px;
+  color: orangered;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+}
+.btn-primary {
+  text-decoration: none;
+  font-size: 42px;
+  color: white;
+  background-color: var(--text-color);
+  padding: 12px 10px 4px 12px;
+  border-radius: 20px 0 10px;
+}
+.btn-primary:hover {
+  border: 1px solid var(--text-color);
+  background-color: rgba(255, 255, 255, 0);
+}

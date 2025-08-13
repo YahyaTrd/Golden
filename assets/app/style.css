@@ -2,6 +2,7 @@
   box-sizing: border-box;
   outline: 0;
   padding: 0;
+  scroll-behavior: smooth;
   margin: 0;
 }
 :root {
@@ -103,4 +104,23 @@ nav i {
 .btn-primary:hover {
   border: 1px solid var(--text-color);
   background-color: rgba(255, 255, 255, 0);
+}
+#services .icon {
+  border: 2px solid var(--text-color);
+  width: 75px;
+  border-radius: 50%;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 25px;
+  justify-content: center;
+  margin-top: 60px;
 }

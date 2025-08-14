@@ -3,6 +3,7 @@ window.onscroll = () => {
     header.classList.remove("onscroll");
   }
 };
+
 document.querySelector(".fa-bars").onclick = () =>
   navBar.classList.add("active");
 
